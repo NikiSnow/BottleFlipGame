@@ -1,26 +1,18 @@
 {
-    "headers": [
-      {
-        "source": "/(.*.js.gz|.*.wasm.gz|.*.data.gz|.*.symbols.json.gz)",
-        "headers": [
-          {
-            "key": "Content-Encoding",
-            "value": "gzip"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000"
-          }
-        ]
-      },
-      {
-        "source": "/(.*.js|.*.wasm|.*.data)",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
+  "routes": [
+    {
+      "src": "/Build/(.*).js.gz",
+      "headers": {
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/javascript"
       }
-    ]
-  }
+    },
+    {
+      "src": "/Build/(.*).wasm.gz",
+      "headers": {
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/wasm"
+      }
+    }
+  ]
+}
