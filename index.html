@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | My project</title>
+    <title>Unity Web Player | BottleFlipGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=540 height=960 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=360 height=640 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -47,16 +47,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BottleFlipGame12.loader.js";
+      var loaderUrl = buildUrl + "/BottleFlipGame22.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/BottleFlipGame12.data",
-        frameworkUrl: buildUrl + "/BottleFlipGame12.framework.js",
-        codeUrl: buildUrl + "/BottleFlipGame12.wasm",
+        dataUrl: buildUrl + "/BottleFlipGame22.data",
+        frameworkUrl: buildUrl + "/BottleFlipGame22.framework.js",
+        codeUrl: buildUrl + "/BottleFlipGame22.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "My project",
-        productVersion: "0.1",
+        companyName: "TO_NiceGuys",
+        productName: "BottleFlipGame",
+        productVersion: "0.5",
         showBanner: unityShowBanner,
       };
 
